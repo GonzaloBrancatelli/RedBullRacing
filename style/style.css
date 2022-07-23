@@ -1,0 +1,303 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+* {
+    padding:0;
+    margin:0;
+}
+
+body {
+    background-color: #00335f;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+
+}
+
+img{    
+    width: 540px;
+    height: 420px;     
+}
+
+.checo img, .max img {
+    border: 0.5ch solid rgb(0, 84, 158) ;
+    border-radius: 5px;
+}
+
+
+.img-team {
+    width: 15vh;
+    height: 12vh;
+    padding: 2em;
+}
+
+h1, h2, h3 {
+    padding: 20px;
+    text-align: center;}
+h1 {
+    justify-items: center;
+    padding: 20px;
+}
+
+span{
+    color: rgb(179, 179, 179);
+}
+
+/*+++++ NAV +++++*/
+nav ul {    
+    color:white;  
+}
+nav ul{
+    font-weight: 800;
+    text-transform: uppercase;
+    list-style: none;
+    font-size: larger;
+}
+
+/*
+.bars {
+    display: grid;
+    justify-content:flex-end;    
+    width: 650%;
+    justify-items: left;
+    padding: 10px 0px;
+    background-color: #00335f;
+}
+
+*/
+
+.nav-li:hover > a {    
+    transition: 0.3s;    
+    color: rgba(172, 172, 172, 0.7)
+}
+
+
+.nav-li:hover > i {    
+    transition: 0.3s;
+    color: rgba(177, 177, 177, 0.7)
+}
+
+.nav-li {
+    padding: 5px 0px;
+}
+
+nav ul li i {
+    padding-right: 10px;
+}
+
+/*+++++ ANCHOR STYLE +++++*/
+a{color: white;}
+a:link { text-decoration: none; }
+
+a:visited { text-decoration: none; }
+
+a:hover { text-decoration: none; }
+
+a:active { text-decoration: none; }
+
+/*++++++++ tabla de carreras ++++++++*/
+
+
+.data-table__table {
+    margin: auto;
+    width: 98%;
+    border: 1px solid rgb(133, 133, 133);
+    border-collapse: collapse;
+    border-radius: 30px;      
+}
+
+tr:nth-child(even) {background-color: rgba(255, 255, 255, 0.2);}
+
+td, th {   
+    padding: 20px;
+    text-align: left;  
+    border-collapse: collapse;  
+}
+
+.result_table-row-highlighted{
+    font-weight: 600;
+    color: gold;
+}
+
+.data-table__column-title{
+    text-transform: uppercase;
+    background-color: rgba(255, 255, 255, 0.4);
+}
+
+/*++++++ GRIDS CONFIGS ++++++*/
+.index-grid{
+    
+    display: flex;
+    flex-direction: column;
+    grid-template-areas: 
+    "header"
+    "nav"
+    "contenido"
+    "contenido2"
+    "footer";
+    gap: 40px;   
+}
+
+header{
+    font-size: large;
+    display:grid;
+    justify-content: start;    
+    grid-area: header;
+    background-color: #002649;
+    width: 100%;    
+}
+
+nav{    
+    padding: 1vh;
+    grid-area: nav;  
+}
+
+footer {
+    color: white;
+    grid-area: footer;
+    display: flex;
+    padding: 5vh;
+ }
+
+ .footer1{
+    padding: 10px 10vh;
+ }
+
+.footer2{
+    padding: 10px 10vh;
+}
+
+.contenido1{
+    grid-area: contenido;
+    text-align: center;
+}
+
+.contenido1 div {
+    padding: 20px;
+}
+
+.contenido2 {
+    grid-area: contenido2;
+    text-align: center;    
+}
+
+.pilotos-grid{    
+    display: grid;
+    flex-direction: column;
+    grid-template-areas: 
+    "header"
+    "nav"
+    "max"
+    "checo"
+    "teamred"
+    "footer";   
+}
+
+.teamred{    
+    grid-area: teamred;
+    margin-top: auto;    
+}
+
+.team{
+    border: 3px solid #0086fc;
+    padding: 20px 0px;
+    display: grid;    
+    text-align: center;
+}
+.max {       
+    grid-area: max;    
+    text-align: center;    
+}
+
+.checo {    
+    text-align: center;
+    grid-area: checo;
+
+}
+.cars{
+    padding: 10px;
+    display: flex;
+    flex-direction: column;   
+    grid-template-columns: 1fr 1fr 1fr; 
+    grid-template-areas:   
+    "header header"
+    "nav nav"
+    "cars cars"        
+    "footer footer";
+    text-align: center;
+    
+}
+.img-cars {    
+    justify-content: center;   
+}
+.div-cars{
+    display: grid;
+    grid-area: cars;     
+}
+
+/*+++++ CSS Media queries +++++*/
+
+@media (min-width:1200px) {
+    .index-grid{
+    
+        grid-template-areas: 
+        "header header"
+        "nav nav"
+        "contenido contenido"
+        "contenido2 contenido2"
+        "footer footer";           
+    }
+    .bars {
+        display: none;     
+    }
+    .img-cars{
+        height: 250px;
+        width: 300px;
+    }
+    .cars{
+        
+        display: flex;
+        flex-direction: column;   
+        grid-template-columns: 5fr 4fr 5fr;
+        grid-template-areas:   
+        "header header"
+        "nav nav"
+        "cars cars cars"        
+        "footer footer";
+        text-align: left;             
+    }
+    .div-cars{
+        display: flex;             
+        justify-items: left;
+    }
+    .pilotos-grid{
+        display: grid;                
+        grid-auto-flow: column dense; 
+        grid-template-columns: 1fr 1fr 0.6fr 1fr 1fr; 
+        grid-template-rows: 1fr;        
+        grid-template-areas: 
+        "header header header header header"
+        "nav nav nav nav nav"
+        "max max . checo checo"
+        "teamred teamred teamred teamred teamred"
+        "footer footer footer footer footer";          
+    }
+     .nav_ul{
+        display: flex;
+    }
+    .nav-li {
+        padding: 0px 20px;
+    }
+    .checo{
+        background-color: rgba(0, 132, 248, 0.678);
+        border-radius: 2em;
+        padding: 20px;
+    }
+    .max{
+        background-color: rgba(0, 132, 248, 0.678);
+        border-radius: 2em;
+        padding: 20px;
+    }
+}
