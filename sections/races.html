@@ -15,18 +15,43 @@
 </head>
 <body>
   <header>
-    <nav>
-        <ul class="nav_ul animate__animated animate__backInRight">
-            <li class="nav-li"><i class="fas fa-house"></i><a href="../index.html">Home</a></li>
-            <li class="nav-li"><i class="fa-solid fa-flag-checkered"></i><a class="race" href="carreras.html">Race</a></li>
-            <li class="nav-li"><i class="fa-solid fa-car"></i><a href="autos.html">Cars</a></li>
-            <li class="nav-li"><i class="fa-solid fa-user-group"></i><a href="pilotos.html">Drivers</a></li>
-            <li class="nav-li"><i class="fa-solid fa-building"></i><a href="nosotros.html">About</a></li>
-        </ul>
-    </nav>
+    <nav class="navbar navbar-dark fixed-top color-nav">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="../index.html">Red bull Racing</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="offcanvas offcanvas-end text-bg-dark color-nav" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">Red bull Racing</h5>
+            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="../index.html"><i class="fas fa-house color-icon"></i>Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./car.html"><i class="fa-solid fa-car color-icon"></i>Car</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="./races.html"><i class="fa-solid fa-flag-checkered color-icon"></i>Races</a>
+              </li>   
+              <li class="nav-item">
+                <a class="nav-link" href="./team.html"><i class="fa-solid fa-user-group color-icon"></i>Drivers and Team</a>
+              </li>   
+              <li class="nav-item">
+                <a class="nav-link" href="./aboutus.html"><i class="fa-solid fa-building color-icon"></i>About Us</a>
+              </li>                 
+            </ul>                      
+          </div>
+        </div>
+      </div>
+    </nav> 
   </header>
   
-    <h1>Races</h1>
+  
+    <h1 class="animate__animated animate__bounce">Races</h1>
   <div class="index-grid">
   
 
@@ -102,21 +127,21 @@
      </tr>
      <tr class="data-table__row">
        <td class="data-table__column-data false">Austria</td>
-       <td class="data-table__column-data false">--</td>
-       <td class="data-table__column-data false">--</td>
-       <td class="data-table__column-data false">--</td>
+       <td class="data-table__column-data false">C. Leclerc</td>
+       <td class="data-table__column-data false">Scuderia Ferrari</td>
+       <td class="data-table__column-data false">71</td>
      </tr>
      <tr class="data-table__row">
-       <td class="data-table__column-data false">France</td>
-       <td class="data-table__column-data false">--</td>
-       <td class="data-table__column-data false">--</td>
-       <td class="data-table__column-data false">--</td>
+       <td class="data-table__column-data result_table-row-highlighted">France</td>
+       <td class="data-table__column-data result_table-row-highlighted">M. Verstappen</td>
+       <td class="data-table__column-data result_table-row-highlighted">Oracle Red Bull Racing</td>
+       <td class="data-table__column-data result_table-row-highlighted">53</td>
      </tr>
      <tr class="data-table__row">
-       <td class="data-table__column-data false">Hungary</td>
-       <td class="data-table__column-data false">--</td>
-       <td class="data-table__column-data false">--</td>
-       <td class="data-table__column-data false">--</td>
+       <td class="data-table__column-data result_table-row-highlighted">Hungary</td>
+       <td class="data-table__column-data result_table-row-highlighted">M. Verstappen</td>
+       <td class="data-table__column-data result_table-row-highlighted">Oracle Red Bull Racing</td>
+       <td class="data-table__column-data result_table-row-highlighted">70</td>
      </tr>
      <tr class="data-table__row">
        <td class="data-table__column-data false">Belgium</td>
