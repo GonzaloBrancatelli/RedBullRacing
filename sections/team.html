@@ -17,23 +17,48 @@
 <div>
 <body>
     <header>
-        <nav>
-            <ul class="nav_ul animate__animated animate__backInRight">
-                <li class="nav-li"><i class="fas fa-house"></i><a href="../index.html">Home</a></li>
-                <li class="nav-li"><i class="fa-solid fa-flag-checkered"></i><a class="race" href="carreras.html">Race</a></li>
-                <li class="nav-li"><i class="fa-solid fa-car"></i><a href="autos.html">Cars</a></li>
-                <li class="nav-li"><i class="fa-solid fa-user-group"></i><a href="pilotos.html">Drivers</a></li>
-                <li class="nav-li"><i class="fa-solid fa-building"></i><a href="nosotros.html">About</a></li>
-            </ul>
-        </nav>        
-    </header>    
-    <h1>Drivers</h1>
+        <nav class="navbar navbar-dark fixed-top color-nav">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="../index.html">Red bull Racing</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="offcanvas offcanvas-end text-bg-dark color-nav" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
+                <div class="offcanvas-header">
+                  <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">Red bull Racing</h5>
+                  <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                  <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                    <li class="nav-item">
+                      <a class="nav-link" aria-current="page" href="../index.html"><i class="fas fa-house color-icon"></i>Home</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="./car.html"><i class="fa-solid fa-car color-icon"></i>Car</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="./races.html"><i class="fa-solid fa-flag-checkered color-icon"></i>Races</a>
+                    </li>   
+                    <li class="nav-item">
+                      <a class="nav-link active" href="./team.html"><i class="fa-solid fa-user-group color-icon"></i>Drivers and Team</a>
+                    </li>   
+                    <li class="nav-item">
+                      <a class="nav-link" href="./aboutus.html"><i class="fa-solid fa-building color-icon"></i>About Us</a>
+                    </li>                 
+                  </ul>                      
+                </div>
+              </div>
+            </div>
+          </nav> 
+    </header>
+
+    <h1 class="animate__animated animate__bounce">Drivers</h1>
     <div class="pilotos-grid">
         
         <div class="max">
             <h2>Max Verstappen</h2>
             <h3>Formula 1 World Champion Max Verstappen was born to be fast and comes from a racing heritage.</h3>
-            <img src="https://www.f1latam.com/img/prin/mv55.jpg" alt="Max Verstappen con el puño en alto y sonriente">
+            <img class="drivers-img" src="https://www.f1latam.com/img/prin/mv55.jpg" alt="Max Verstappen con el puño en alto y sonriente">
             <p>The son of former F1 driver Jos Verstappen and Belgian kart champion Sophie Kumpen, Max took the karting
                 world by storm, winning national, international and world titles. Then, having reached the required age
                 he moved into single-seaters for the 2014 season, contesting the FIA European Formula 3 Championship.
@@ -41,12 +66,7 @@
                 Prix at Silverstone and the season finale in Abu Dhabi. The victories were supported by remarkable
                 consistency, as he finished on the podium 11 times from the 12 races in which he saw the chequered flag.
 
-                With momentum building and with the bulk of the 2020 car carried over to the following year, the stage
-                was set for Max to make his first serious bid for championship glory in 2021. The Dutchman took his
-                first win of the season with a battling second round drive at Imola and three races later he put in a
-                faultless performance in Monte Carlo to take his first Monaco Grand Prix win. The victory in the
-                Principality also propelled him to the top of the Championship standings for the first time in his F1
-                career.
+                
                 A third victory of the campaign arrived at the French Grand Prix before delivering a brace of crushing
                 wins at the team’s home circuit, the Red Bull Ring, home of the Styrian and Austrian Grands Prix.
                 The Team’s rivals managed to find a significant performance boost, however, and over the following three
@@ -60,13 +80,12 @@
         <div class="checo">
             <h2>Checo Perez</h2>
             <h3>Drive, passion and determination is what keeps Sergio Pérez hunting wins in Formula One.</h3>
-            <img src="https://www.infobae.com/new-resizer/pLQh2nbAJY7-eQjBxjtlh9X9n-U=/768x512/filters:format(webp):quality(85)/cloudfront-us-east-1.images.arcpublishing.com/infobae/UZ7XA6ZUHLMAMMNZXI3ZRDE5DE.jpg"
+            <img class="drivers-img" src="https://www.infobae.com/new-resizer/pLQh2nbAJY7-eQjBxjtlh9X9n-U=/768x512/filters:format(webp):quality(85)/cloudfront-us-east-1.images.arcpublishing.com/infobae/UZ7XA6ZUHLMAMMNZXI3ZRDE5DE.jpg"
                 alt="Checo Perez sonriente">
             <p>
                 Sergio ‘Checo’ Perez began his career aged six. His ascent up the karting ranks was swift and at one
                 point required a special dispensation to allow him to compete in more powerful machinery outside his age
                 group.
-
 
                 Following his 2020 successes, the Mexican driver was drafted in to race alongside Max Verstappen and in
                 his first year with the team proved his value on numerous occasions, taking one win and five podiums on
@@ -84,28 +103,30 @@
 
                 After Italy, something clicked and Checo found the sweet spot he had been searching for. A third podium
                 of the year, in Turkey, was followed by third place finishes in the US and, jubilantly, on home soil in
-                Mexico.
-
-                However, perhaps Checo’s biggest moment, from a team perspective, came in the final round in Abu Dhabi.
-                Where a brilliant defensive drive on aging tyres saw the Mexican fend off repeated attacks by Lewis
-                Hamilton, a performance that provided a platform for Max Verstappen to make up time and challenge
-                Hamilton for what eventually resulted in the Dutchman’s first world title.
+                Mexico.               
 
                 A true team player, devastatingly quick in his own right and strategically brilliant racer, Checo’s
                 second season with the Team promises more epic moments to remember.
             </p>
 
         </div>
-        
-        <div class="teamred">
-            <h2>The team of Redbull Racing</h2>            
-            <section class="team">
-                <h2>Christian Horner</h2>
-                <h3>Since Red Bull Racing was born at the tail-end of 2004, one man has been charged with directing its
-                    efforts – Christian Horner.</h3>
-                <img class="img-team" src="https://phantom-marca.unidadeditorial.es/54c8759ede53221598350a98aac2856d/resize/1320/f/jpg/assets/multimedia/imagenes/2021/11/22/16375955868709.jpg"
-                    alt="Christian Horner">
-                <p>Christian’s path to the top rung of the Formula One management ladder began behind the wheel, as a
+
+
+        <div id="carouselExampleCaptions" class="carousel slide w-100 teamred" data-bs-ride="false">
+            <h2>The team of Redbull Racing</h2>  
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 4"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img class="d-block w-100 img-chris" src="https://phantom-marca.unidadeditorial.es/54c8759ede53221598350a98aac2856d/resize/1320/f/jpg/assets/multimedia/imagenes/2021/11/22/16375955868709.jpg"
+                alt="Christian Horner">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Christian Horner</h5>
+                  <p>Christian’s path to the top rung of the Formula One management ladder began behind the wheel, as a
                     talented young racer. After rising through the ranks to Formula 3000 in the late 1990s, Christian
                     eventually hung up his racing overalls and moved to a management role. At the age of 25 he founded
                     the Arden International Race Team, and quickly built the squad into a formidable winning machine.
@@ -117,41 +138,26 @@
                     positions and 68 fastest laps. And while Christian is still one of the youngest Team Principals in
                     the F1 paddock, entering his 18th season at the helm of Oracle Red Bull Racing Honda, he is also its
                     most experienced.</p>
-            </section>
-            <section class="team">
-                <h2>Sébastien Buemi</h2>
-                <h3>There are few more accomplished racing drivers in world motorsport than Sébastien Buemi and we are
-                    fortunate to have him as our Test And Reserve Driver at Oracle Red Bull Racing.</h3>
-                <img class="img-team" src="https://img.redbull.com/images/c_crop,w_2195,h_2195,x_0,y_0,f_auto,q_auto/c_scale,w_3440/redbullcom/2020/3/3/nuxkhfmek0gdfuag0yiu/sebastien-buemi"
-                    alt="Sébastien Buemi">
-                <p>Sébastien has the rare distinction of drivers’ titles in two different elite level FIA series. The
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100" src="https://img.redbull.com/images/c_crop,w_2195,h_2195,x_0,y_0,f_auto,q_auto/c_scale,w_3440/redbullcom/2020/3/3/nuxkhfmek0gdfuag0yiu/sebastien-buemi"
+                alt="Sébastien Buemi">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Sébastien Buemi</h5>
+                  <p>Sébastien has the rare distinction of drivers’ titles in two different elite level FIA series. The
                     bullet points of his racing career include two World Drivers’ Championship titles in the World
                     Endurance Championship; the 2015-16 Formula E drivers’ title; three Teams championship titles in
                     Formula E and three more in WEC; three victories at the Le Mans 24 Hours, numerous victories in
                     junior formula and three full seasons with Scuderia Toro Rosso in Formula One.</p>
-            </section>
-            <section class="team">
-                <h2>Adrian Newey</h2>
-                <h3>Oracle Red Bull Racing’s Chief Technical Officer has won 10 Formula One Constructors’ Titles and
-                    propelled some of the world’s most famous racers to the Drivers’ Championship.</h3>
-                <img class="img-team" src="https://img.redbull.com/images/c_crop,w_3120,h_3120,x_732,y_0,f_auto,q_auto/c_scale,w_3440/redbullcom/2021/6/18/latzqhzcjr4c2bo7oavm/adrian-newey"
-                    alt="Adrian Newey">
-                <p>After studying aeronautics at Southampton University and early stints with the Fittipaldi and March
-                    F1 Teams, Newey first tasted success across the Atlantic. His March sports car design won IMSA’s GTP
-                    class in 1983 and 1984, and his IndyCar project, the March 85C, won the CART Championship and the
-                    Indy 500. The follow-up 86C won the CART title in 1986 and the Indy 500 in both ‘86 and ‘87 but F1
-                    was calling, and after brief tenures with FORCE and March, Newey was, by 1990, at Williams.
-                    While our designs are a huge collective effort in the modern era, every Oracle Red Bull Racing car
-                    still contains Adrian’s distinctive philosophies and insight. With another huge aerodynamic shakeup
-                    looming large on the horizon, those skills have never been more highly prized.
-                </p>
-            </section>
-            <section class="team">
-                <h2>Paul Monaghan</h2>
-                <h3>Paul Monaghan’s F1 career encompasses almost three decades of high achievement.</h3>
-                <img class="img-team" src="https://img.redbull.com/images/c_crop,w_3521,h_3521,x_789,y_0,f_auto,q_auto/c_scale,w_3440/redbullcom/2021/6/18/wxysv5qznvjqbzvg0dqj/paul-monaghan"
-                    alt="Paul Monaghan">
-                <p>Paul is one of the most experienced and knowledgeable engineers working in the paddock. His Formula
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100" src="https://img.redbull.com/images/c_crop,w_3521,h_3521,x_789,y_0,f_auto,q_auto/c_scale,w_3440/redbullcom/2021/6/18/wxysv5qznvjqbzvg0dqj/paul-monaghan"
+                alt="Paul Monaghan">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Paul Monaghan</h5>
+                  <p>Paul is one of the most experienced and knowledgeable engineers working in the paddock. His Formula
                     One journey began soon after he had gained his Masters’ degree in Mechanical Engineering when he
                     began working at McLaren in 1990. Working on the cars driven by the legendary Ayrton Senna and
                     teammate Gerhard Berger had a big impact and Paul would spend the rest of the decade at the Woking
@@ -160,12 +166,34 @@
                     As part of Oracle Red Bull Racing’s senior technical management, Paul’s is not supposed to be a
                     ‘hands-on’ role but more often than not he is to be found in the garage or the race bays, either
                     deep in conversation with the Team’s mechanics and trackside engineers, or staring intently at a
-                    detailed element of the car, willing the RB16B to give up its secrets.
-                </p>
-            </section>
-        </div>
-
-
+                    detailed element of the car, willing the RB16B to give up its secrets.</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100"src="https://img.redbull.com/images/c_crop,w_3120,h_3120,x_732,y_0,f_auto,q_auto/c_scale,w_3440/redbullcom/2021/6/18/latzqhzcjr4c2bo7oavm/adrian-newey"
+                alt="Adrian Newey">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Adrian Newey</h5>
+                  <p>After studying aeronautics at Southampton University and early stints with the Fittipaldi and March
+                    F1 Teams, Newey first tasted success across the Atlantic. His March sports car design won IMSA’s GTP
+                    class in 1983 and 1984, and his IndyCar project, the March 85C, won the CART Championship and the
+                    Indy 500. The follow-up 86C won the CART title in 1986 and the Indy 500 in both ‘86 and ‘87 but F1
+                    was calling, and after brief tenures with FORCE and March, Newey was, by 1990, at Williams.
+                    While our designs are a huge collective effort in the modern era, every Oracle Red Bull Racing car
+                    still contains Adrian’s distinctive philosophies and insight. With another huge aerodynamic shakeup
+                    looming large on the horizon, those skills have never been more highly prized.</p>
+                </div>
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div> 
     </div>
     <footer>
         <div class="footer1">
@@ -192,5 +220,4 @@
     <!-- JavaScript Bundle with Popper -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
 </body>
-
 </html>

@@ -11,14 +11,19 @@ body {
     font-family: 'Roboto', sans-serif;
     font-weight: 400;
     display: flex;
-    flex-direction: column;
-    padding: 20px;
+    flex-direction: column;    
+    gap: 3vh;
 
 }
 
-img{    
+.img-index{    
     width: 540px;
     height: 420px;     
+}
+
+.drivers-img{
+    width: 30%;
+    height: 30%;
 }
 
 .checo img, .max img {
@@ -26,65 +31,25 @@ img{
     border-radius: 5px;
 }
 
-
-.img-team {
-    width: 15vh;
-    height: 12vh;
-    padding: 2em;
-}
-
-h1, h2, h3 {
-    padding: 20px;
+h2{
+    padding: 8vh;    
     text-align: center;}
 h1 {
-    justify-items: center;
-    padding: 20px;
-}
+    margin-top: 3%;
+    padding: 3vh;
+    text-align: center;}
 
 span{
     color: rgb(179, 179, 179);
 }
 
 /*+++++ NAV +++++*/
-nav ul {    
-    color:white;  
-}
-nav ul{
-    font-weight: 800;
-    text-transform: uppercase;
-    list-style: none;
-    font-size: larger;
+.color-nav {
+    background-color: #002649;
 }
 
-/*
-.bars {
-    display: grid;
-    justify-content:flex-end;    
-    width: 650%;
-    justify-items: left;
-    padding: 10px 0px;
-    background-color: #00335f;
-}
-
-*/
-
-.nav-li:hover > a {    
-    transition: 0.3s;    
-    color: rgba(172, 172, 172, 0.7)
-}
-
-
-.nav-li:hover > i {    
-    transition: 0.3s;
-    color: rgba(177, 177, 177, 0.7)
-}
-
-.nav-li {
-    padding: 5px 0px;
-}
-
-nav ul li i {
-    padding-right: 10px;
+#offcanvasDarkNavbar {
+    background-color: #002649!Important;
 }
 
 /*+++++ ANCHOR STYLE +++++*/
@@ -131,8 +96,7 @@ td, th {
     
     display: flex;
     flex-direction: column;
-    grid-template-areas: 
-    "header"
+    grid-template-areas:    
     "nav"
     "contenido"
     "contenido2"
@@ -140,17 +104,7 @@ td, th {
     gap: 40px;   
 }
 
-header{
-    font-size: large;
-    display:grid;
-    justify-content: start;    
-    grid-area: header;
-    background-color: #002649;
-    width: 100%;    
-}
-
-nav{    
-    padding: 1vh;
+nav{         
     grid-area: nav;  
 }
 
@@ -158,15 +112,15 @@ footer {
     color: white;
     grid-area: footer;
     display: flex;
-    padding: 1vh;
+    padding: 5vh 0vh;
  }
 
  .footer1{
-    padding: 10px 10vh;
+    padding: 3vh 3vh;
  }
 
 .footer2{
-    padding: 10px 10vh;
+    padding: 3vh 3vh;
 }
 
 .contenido1{
@@ -186,8 +140,7 @@ footer {
 .pilotos-grid{    
     display: grid;
     flex-direction: column;
-    grid-template-areas: 
-    "header"
+    grid-template-areas:     
     "nav"
     "max"
     "checo"
@@ -200,12 +153,6 @@ footer {
     margin-top: auto;    
 }
 
-.team{
-    border: 3px solid #0086fc;
-    padding: 20px 0px;
-    display: grid;    
-    text-align: center;
-}
 .max {       
     grid-area: max;    
     text-align: center;    
@@ -216,62 +163,23 @@ footer {
     grid-area: checo;
 
 }
-.cars{
-    padding: 10px;
-    display: flex;
-    flex-direction: column;   
-    grid-template-columns: 1fr 1fr 1fr; 
-    grid-template-areas:   
-    "header header"
-    "nav nav"
-    "cars cars"        
-    "footer footer";
-    text-align: center;
-    
-}
-.img-cars {    
-    justify-content: center;   
-}
-.div-cars{
-    display: grid;
-    grid-area: cars;     
-}
 
 /*+++++ CSS Media queries +++++*/
 
 @media (min-width:1200px) {
     .index-grid{
     
-        grid-template-areas: 
-        "header header"
+        grid-template-areas:        
         "nav nav"
         "contenido contenido"
         "contenido2 contenido2"
         "footer footer";           
-    }
-    .bars {
-        display: none;     
-    }
-    .img-cars{
-        height: 250px;
-        width: 300px;
-    }
-    .cars{
-        
-        display: flex;
-        flex-direction: column;   
-        grid-template-columns: 5fr 4fr 5fr;
-        grid-template-areas:   
-        "header header"
-        "nav nav"
-        "cars cars cars"        
-        "footer footer";
-        text-align: left;             
-    }
-    .div-cars{
-        display: flex;             
-        justify-items: left;
-    }
+    }  
+
+    .drivers-img{
+        width: 60%;
+        height: 30%;
+    }    
     .pilotos-grid{
         display: grid;                
         grid-auto-flow: column dense; 
@@ -284,20 +192,22 @@ footer {
         "teamred teamred teamred teamred teamred"
         "footer footer footer footer footer";          
     }
-     .nav_ul{
-        display: flex;
-    }
-    .nav-li {
-        padding: 0px 20px;
-    }
-    .checo{
+    .checo{    
         background-color: rgba(0, 132, 248, 0.678);
         border-radius: 2em;
-        padding: 20px;
+        padding: 1vh;
+        
     }
     .max{
         background-color: rgba(0, 132, 248, 0.678);
         border-radius: 2em;
-        padding: 20px;
+        padding: 1vh;
+    }
+    .footer1{
+        padding: 5vh 20vh;
+     }
+    
+    .footer2{
+        padding: 5vh 20vh; 
     }
 }
