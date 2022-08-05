@@ -16,14 +16,16 @@ body {
 
 }
 
+/*+++++ IMG +++++*/
+
 .img-index{    
-    width: 540px;
-    height: 420px;     
+    width: 17rem;
+    height: 15rem;     
 }
 
 .drivers-img{
-    width: 30%;
-    height: 30%;
+    width: 10rem;
+    height: 10rem;
 }
 
 .checo img, .max img {
@@ -31,11 +33,38 @@ body {
     border-radius: 5px;
 }
 
+/*+++++ Titles box model and others +++++*/
+
+.accordion-button{
+    color:white;
+    background-color: #002649;   
+}
+
+.accordion-item{
+    color: white;
+    background-color: #002649;
+}
+.cars-style{
+    padding: 2rem;
+}
+
+.max{
+    padding: 2rem;
+}
+
+.checo{
+    padding: 2rem;
+}
+
+i {
+    padding-right: 0.3rem;
+}
+
 h2{
-    padding: 8vh;    
+    padding: 5vh;    
     text-align: center;}
 h1 {
-    margin-top: 3%;
+    margin-top: 3rem;
     padding: 3vh;
     text-align: center;}
 
@@ -113,15 +142,8 @@ footer {
     grid-area: footer;
     display: flex;
     padding: 5vh 0vh;
+    justify-content: space-around;
  }
-
- .footer1{
-    padding: 3vh 3vh;
- }
-
-.footer2{
-    padding: 3vh 3vh;
-}
 
 .contenido1{
     grid-area: contenido;
@@ -150,7 +172,8 @@ footer {
 
 .teamred{    
     grid-area: teamred;
-    margin-top: auto;    
+    padding: 1rem;
+      
 }
 
 .max {       
@@ -166,6 +189,52 @@ footer {
 
 /*+++++ CSS Media queries +++++*/
 
+@media (min-width:320px) {
+    
+    .desktop {
+        display: contents;
+    }
+
+    .footer1{
+        padding: 1rem 1rem;
+     }
+    
+    .footer2{
+        padding: 1rem 1rem;
+    }
+}
+
+@media (min-width:580px) {
+   
+    .footer1{
+        padding: 3vh 3vh;
+     }
+    
+    .footer2{
+        padding: 3vh 3vh;
+    }
+
+    .mobile{
+        display: contents;
+    }
+
+    .desktop {display: inline-flex;}
+
+ 
+}
+
+@media (min-width:860px) {
+        .img-index{
+            width: 30rem;
+            height: 25rem;
+        }    
+
+        .teamred{
+            padding: 0 5rem;
+        }
+
+}
+
 @media (min-width:1200px) {
     .index-grid{
     
@@ -175,6 +244,11 @@ footer {
         "contenido2 contenido2"
         "footer footer";           
     }  
+
+    .img-index{
+        width: 35rem;
+        height: 30rem;
+    }    
 
     .drivers-img{
         width: 60%;
@@ -196,12 +270,14 @@ footer {
         background-color: rgba(0, 132, 248, 0.678);
         border-radius: 2em;
         padding: 1vh;
+        font-size: 70%;
         
     }
     .max{
         background-color: rgba(0, 132, 248, 0.678);
         border-radius: 2em;
         padding: 1vh;
+        font-size: 70%;
     }
     .footer1{
         padding: 5vh 20vh;
@@ -209,5 +285,14 @@ footer {
     
     .footer2{
         padding: 5vh 20vh; 
+    }
+}
+
+@media (min-width:1400px){
+    .max{
+        font-size: 100%;
+    }
+    .checo{
+        font-size: 100%;
     }
 }
