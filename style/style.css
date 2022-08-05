@@ -16,6 +16,10 @@ body {
 
 }
 
+.desktop{
+    display: none;
+}
+
 /*+++++ IMG +++++*/
 
 .img-index{    
@@ -34,6 +38,26 @@ body {
 }
 
 /*+++++ Titles box model and others +++++*/
+
+.footer1{
+    padding: 1rem 1rem;
+    font-size: calc(0.7rem + .6vw);
+ }
+
+ .footer1 h3{ 
+    padding: 1rem 0;         
+    font-size: calc(0.7rem + .6vw);
+ }
+
+ .footer2 h3{
+    padding: 1rem 0;        
+    font-size: calc(0.7rem + .6vw);
+ }
+
+.footer2{
+    padding: 1rem 1rem;
+    font-size: calc(0.7rem + .6vw);
+}
 
 .accordion-button{
     color:white;
@@ -189,29 +213,24 @@ footer {
 
 /*+++++ CSS Media queries +++++*/
 
-@media (min-width:320px) {
-    
-    .desktop {
-        display: contents;
-    }
-
-    .footer1{
-        padding: 1rem 1rem;
-     }
-    
-    .footer2{
-        padding: 1rem 1rem;
-    }
-}
-
 @media (min-width:580px) {
    
     .footer1{
-        padding: 3vh 3vh;
+        padding: 3vh 3vh;        
+     }
+
+     .footer1 h3{
+        padding: 1.5rem 0;         
+        font-size: calc(1.3rem + .6vw)
+     }
+
+     .footer2 h3{
+        padding: 1.5rem 0;        
+        font-size: calc(1.3rem + .6vw)
      }
     
     .footer2{
-        padding: 3vh 3vh;
+        padding: 3vh 3vh;        
     }
 
     .mobile{
