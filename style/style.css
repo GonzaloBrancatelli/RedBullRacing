@@ -27,8 +27,12 @@ body {
     height: 15rem;     
 }
 
+.carousel{    
+    margin: auto;
+}
+
 .drivers-img{
-    width: 10rem;
+    width: 12rem;
     height: 10rem;
 }
 
@@ -274,8 +278,8 @@ footer {
     }    
 
     .drivers-img{
-        width: 60%;
-        height: 30%;
+        width: 27rem;
+        height: 19rem;
     }    
     .pilotos-grid{
         display: grid;                
