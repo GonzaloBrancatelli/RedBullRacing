@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+/*+++++ GENERAL CONFIGS +++++*/
 * {
   padding: 0;
   margin: 0;
@@ -86,6 +87,7 @@ a:active {
   margin: auto;
 }
 
+/*+++++ Index configs +++++*/
 .img-index {
   width: 17rem;
   height: 15rem;
@@ -95,6 +97,7 @@ a:active {
   display: none;
 }
 
+/*+++++ Races Table +++++*/
 .data-table__table {
   margin: auto;
   width: 98%;
@@ -123,6 +126,7 @@ td, th {
   background-color: rgba(255, 255, 255, 0.4);
 }
 
+/*+++++ Drivers +++++*/
 .drivers-img {
   width: 12rem;
   height: 10rem;
@@ -133,10 +137,6 @@ td, th {
   border-radius: 5px;
 }
 
-.cars-style {
-  padding: 2rem;
-}
-
 .max {
   padding: 2rem;
 }
@@ -145,6 +145,7 @@ td, th {
   padding: 2rem;
 }
 
+/*+++++ Grids Configs +++++*/
 .index-grid {
   display: flex;
   flex-direction: column;
@@ -198,6 +199,7 @@ footer {
   grid-area: checo;
 }
 
+/*+++++ Media Queries +++++*/
 @media (min-width: 580px) {
   td, th {
     padding: 2rem;
@@ -278,6 +280,7 @@ footer {
     font-size: 100%;
   }
 }
+/*+++++ Cars configs +++++*/
 .accordion-button {
   color: white !important;
   background-color: #002649 !important;
@@ -286,4 +289,8 @@ footer {
 .accordion-item {
   color: white;
   background-color: #002649;
+}
+
+.cars-style {
+  padding: 2rem;
 }/*# sourceMappingURL=style.css.map */

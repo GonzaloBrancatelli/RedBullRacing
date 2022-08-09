@@ -1,3 +1,5 @@
+/*+++++ Cars configs +++++*/
+
 .accordion-button{
     color: $colorfont!Important;
     background-color: $colornav!Important;   
@@ -6,4 +8,8 @@
 .accordion-item{
     color: $colorfont;
     background-color: $colornav;
+}
+
+.cars-style{
+    padding: 2rem;
 }
