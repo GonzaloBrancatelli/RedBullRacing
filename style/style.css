@@ -1,325 +1,290 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
-
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
 * {
-    padding:0;
-    margin:0;
+  padding: 0;
+  margin: 0;
 }
 
 body {
-    background-color: #00335f;
-    color: white;
-    font-family: 'Roboto', sans-serif;
-    font-weight: 400;
-    display: flex;
-    flex-direction: column;    
-    gap: 3vh;
-
+  background-color: #00335f;
+  color: white;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  display: flex;
+  flex-direction: column;
+  gap: 3vh;
 }
 
-.desktop{
-    display: none;
+h1 {
+  margin-top: 3rem;
+  padding: 3vh;
+  text-align: center;
 }
 
-/*+++++ IMG +++++*/
-
-.img-index{    
-    width: 17rem;
-    height: 15rem;     
+h2 {
+  padding: 5vh;
+  text-align: center;
 }
 
-.carousel{    
-    margin: auto;
+.footer1 {
+  padding: 1rem 1rem;
+  font-size: calc(0.7rem + 0.6vw);
+}
+.footer1 h3 {
+  padding: 1rem 0;
+  font-size: calc(0.7rem + 0.6vw);
 }
 
-.drivers-img{
-    width: 12rem;
-    height: 10rem;
+.footer2 {
+  padding: 1rem 1rem;
+  font-size: calc(0.7rem + 0.6vw);
+}
+.footer2 h3 {
+  padding: 1rem 0;
+  font-size: calc(0.7rem + 0.6vw);
 }
 
-.checo img, .max img {
-    border: 0.5ch solid rgb(0, 84, 158) ;
-    border-radius: 5px;
+.accordion-button {
+  color: white !important;
+  background-color: #002649 !important;
 }
 
-/*+++++ Titles box model and others +++++*/
-
-.footer1{
-    padding: 1rem 1rem;
-    font-size: calc(0.7rem + .6vw);
- }
-
- .footer1 h3{ 
-    padding: 1rem 0;         
-    font-size: calc(0.7rem + .6vw);
- }
-
- .footer2 h3{
-    padding: 1rem 0;        
-    font-size: calc(0.7rem + .6vw);
- }
-
-.footer2{
-    padding: 1rem 1rem;
-    font-size: calc(0.7rem + .6vw);
-}
-
-.accordion-button{
-    color: white!Important;
-    background-color: #002649!Important;   
-}
-
-.accordion-item{
-    color: white;
-    background-color: #002649;
-}
-.cars-style{
-    padding: 2rem;
-}
-
-.max{
-    padding: 2rem;
-}
-
-.checo{
-    padding: 2rem;
+.accordion-item {
+  color: white;
+  background-color: #002649;
 }
 
 i {
-    padding-right: 0.3rem;
+  padding-right: 0.3rem;
 }
 
-h2{
-    padding: 5vh;    
-    text-align: center;}
-h1 {
-    margin-top: 3rem;
-    padding: 3vh;
-    text-align: center;}
-
-span{
-    color: rgb(179, 179, 179);
+span {
+  color: rgb(179, 179, 179);
 }
 
 /*+++++ NAV +++++*/
 .color-nav {
-    background-color: #002649;
+  background-color: #002649;
 }
 
 #offcanvasDarkNavbar {
-    background-color: #002649!Important;
+  background-color: #002649 !important;
 }
 
 /*+++++ ANCHOR STYLE +++++*/
-a{color: white;}
-a:link { text-decoration: none; }
+a {
+  color: white;
+}
 
-a:visited { text-decoration: none; }
+a:link {
+  text-decoration: none;
+}
 
-a:hover { text-decoration: none; }
+a:visited {
+  text-decoration: none;
+}
 
-a:active { text-decoration: none; }
+a:hover {
+  text-decoration: none;
+}
 
-/*++++++++ tabla de carreras ++++++++*/
+a:active {
+  text-decoration: none;
+}
 
+/*+++++ carousel +++++*/
+.carousel {
+  margin: auto;
+}
+
+.img-index {
+  width: 17rem;
+  height: 15rem;
+}
+
+.desktop {
+  display: none;
+}
 
 .data-table__table {
-    margin: auto;
-    width: 98%;
-    border: 1px solid rgb(133, 133, 133);
-    border-collapse: collapse;
-    border-radius: 30px;      
+  margin: auto;
+  width: 98%;
+  border: 1px solid rgb(133, 133, 133);
+  border-collapse: collapse;
+  border-radius: 30px;
 }
 
-tr:nth-child(even) {background-color: rgba(255, 255, 255, 0.2);}
-
-td, th {    
-    padding: 0.25rem;
-    text-align: left;  
-    border-collapse: collapse;  
+tr:nth-child(even) {
+  background-color: rgba(255, 255, 255, 0.2);
 }
 
-.result_table-row-highlighted{
-    font-weight: 600;
-    color: gold;
+td, th {
+  padding: 0.25rem;
+  text-align: left;
+  border-collapse: collapse;
 }
 
-.data-table__column-title{
-    text-transform: uppercase;
-    background-color: rgba(255, 255, 255, 0.4);
+.result_table-row-highlighted {
+  font-weight: 600;
+  color: gold;
 }
 
-/*++++++ GRIDS CONFIGS ++++++*/
-.index-grid{
-    
-    display: flex;
-    flex-direction: column;
-    grid-template-areas:    
-    "nav"
-    "contenido"
-    "contenido2"
-    "footer";
-    gap: 40px;   
+.data-table__column-title {
+  text-transform: uppercase;
+  background-color: rgba(255, 255, 255, 0.4);
 }
 
-nav{         
-    grid-area: nav;  
+.drivers-img {
+  width: 12rem;
+  height: 10rem;
+}
+
+.checo img, .max img {
+  border: 0.5ch solid rgb(0, 84, 158);
+  border-radius: 5px;
+}
+
+.cars-style {
+  padding: 2rem;
+}
+
+.max {
+  padding: 2rem;
+}
+
+.checo {
+  padding: 2rem;
+}
+
+.index-grid {
+  display: flex;
+  flex-direction: column;
+  grid-template-areas: "nav" "contenido" "contenido2" "footer";
+  gap: 40px;
+}
+
+nav {
+  grid-area: nav;
 }
 
 footer {
-    color: white;
-    grid-area: footer;
-    display: flex;
-    padding: 5vh 0vh;
-    justify-content: space-around;
- }
-
-.contenido1{
-    grid-area: contenido;
-    text-align: center;
+  color: white;
+  grid-area: footer;
+  display: flex;
+  padding: 5vh 0vh;
+  justify-content: space-around;
 }
 
+.contenido1 {
+  grid-area: contenido;
+  text-align: center;
+}
 .contenido1 div {
-    padding: 20px;
+  padding: 20px;
 }
 
 .contenido2 {
-    grid-area: contenido2;
-    text-align: center;    
+  grid-area: contenido2;
+  text-align: center;
 }
 
-.pilotos-grid{    
+.pilotos-grid {
+  display: grid;
+  flex-direction: column;
+  grid-template-areas: "nav" "max" "checo" "teamred" "footer";
+}
+
+.teamred {
+  grid-area: teamred;
+  padding: 1rem;
+}
+
+.max {
+  grid-area: max;
+  text-align: center;
+}
+
+.checo {
+  text-align: center;
+  grid-area: checo;
+}
+
+@media (min-width: 580px) {
+  td, th {
+    padding: 2rem;
+  }
+  .footer1 {
+    padding: 3vh 3vh;
+  }
+  .footer1 h3 {
+    padding: 1.5rem 0;
+    font-size: calc(1.3rem + 0.6vw);
+  }
+  .footer2 h3 {
+    padding: 1.5rem 0;
+    font-size: calc(1.3rem + 0.6vw);
+  }
+  .footer2 {
+    padding: 3vh 3vh;
+  }
+  .mobile {
+    display: contents;
+  }
+  .desktop {
+    display: inline-flex;
+  }
+}
+@media (min-width: 860px) {
+  .img-index {
+    width: 30rem;
+    height: 25rem;
+  }
+  .teamred {
+    padding: 0 5rem;
+  }
+}
+@media (min-width: 1200px) {
+  .index-grid {
+    grid-template-areas: "nav nav" "contenido contenido" "contenido2 contenido2" "footer footer";
+  }
+  .img-index {
+    width: 35rem;
+    height: 30rem;
+  }
+  .drivers-img {
+    width: 27rem;
+    height: 19rem;
+  }
+  .pilotos-grid {
     display: grid;
-    flex-direction: column;
-    grid-template-areas:     
-    "nav"
-    "max"
-    "checo"
-    "teamred"
-    "footer";   
+    grid-auto-flow: column dense;
+    grid-template-columns: 1fr 1fr 0.6fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: "header header header header header" "nav nav nav nav nav" "max max . checo checo" "teamred teamred teamred teamred teamred" "footer footer footer footer footer";
+  }
+  .checo {
+    background-color: rgba(0, 132, 248, 0.678);
+    border-radius: 2em;
+    padding: 1vh;
+    font-size: 70%;
+  }
+  .max {
+    background-color: rgba(0, 132, 248, 0.678);
+    border-radius: 2em;
+    padding: 1vh;
+    font-size: 70%;
+  }
+  .footer1 {
+    padding: 5vh 20vh;
+  }
+  .footer2 {
+    padding: 5vh 20vh;
+  }
 }
-
-.teamred{    
-    grid-area: teamred;
-    padding: 1rem;
-      
-}
-
-.max {       
-    grid-area: max;    
-    text-align: center;    
-}
-
-.checo {    
-    text-align: center;
-    grid-area: checo;
-
-}
-
-/*+++++ CSS Media queries +++++*/
-
-@media (min-width:580px) {
-
-    td, th {    
-        padding: 2rem;
-    }
-   
-    .footer1{
-        padding: 3vh 3vh;        
-     }
-
-     .footer1 h3{
-        padding: 1.5rem 0;         
-        font-size: calc(1.3rem + .6vw)
-     }
-
-     .footer2 h3{
-        padding: 1.5rem 0;        
-        font-size: calc(1.3rem + .6vw)
-     }
-    
-    .footer2{
-        padding: 3vh 3vh;        
-    }
-
-    .mobile{
-        display: contents;
-    }
-
-    .desktop {display: inline-flex;}
-
- 
-}
-
-@media (min-width:860px) {
-        .img-index{
-            width: 30rem;
-            height: 25rem;
-        }    
-
-        .teamred{
-            padding: 0 5rem;
-        }
-
-}
-
-@media (min-width:1200px) {
-    .index-grid{
-    
-        grid-template-areas:        
-        "nav nav"
-        "contenido contenido"
-        "contenido2 contenido2"
-        "footer footer";           
-    }  
-
-    .img-index{
-        width: 35rem;
-        height: 30rem;
-    }    
-
-    .drivers-img{
-        width: 27rem;
-        height: 19rem;
-    }    
-    .pilotos-grid{
-        display: grid;                
-        grid-auto-flow: column dense; 
-        grid-template-columns: 1fr 1fr 0.6fr 1fr 1fr; 
-        grid-template-rows: 1fr;        
-        grid-template-areas: 
-        "header header header header header"
-        "nav nav nav nav nav"
-        "max max . checo checo"
-        "teamred teamred teamred teamred teamred"
-        "footer footer footer footer footer";          
-    }
-    .checo{    
-        background-color: rgba(0, 132, 248, 0.678);
-        border-radius: 2em;
-        padding: 1vh;
-        font-size: 70%;
-        
-    }
-    .max{
-        background-color: rgba(0, 132, 248, 0.678);
-        border-radius: 2em;
-        padding: 1vh;
-        font-size: 70%;
-    }
-    .footer1{
-        padding: 5vh 20vh;
-     }
-    
-    .footer2{
-        padding: 5vh 20vh; 
-    }
-}
-
-@media (min-width:1400px){
-    .max{
-        font-size: 100%;
-    }
-    .checo{
-        font-size: 100%;
-    }
-}
+@media (min-width: 1400px) {
+  .max {
+    font-size: 100%;
+  }
+  .checo {
+    font-size: 100%;
+  }
+}/*# sourceMappingURL=style.css.map */

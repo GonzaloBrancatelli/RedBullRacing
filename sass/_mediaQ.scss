@@ -1,0 +1,106 @@
+@media (min-width:580px) {
+
+    td, th {    
+        padding: 2rem;
+    }
+   
+    .footer1{
+        padding: 3vh 3vh;        
+     }
+
+     .footer1 h3{
+        padding: 1.5rem 0;         
+        font-size: calc(1.3rem + .6vw)
+     }
+
+     .footer2 h3{
+        padding: 1.5rem 0;        
+        font-size: calc(1.3rem + .6vw)
+     }
+    
+    .footer2{
+        padding: 3vh 3vh;        
+    }
+
+    .mobile{
+        display: contents;
+    }
+
+    .desktop {display: inline-flex;}
+
+ 
+}
+
+@media (min-width:860px) {
+        .img-index{
+            width: 30rem;
+            height: 25rem;
+        }    
+
+        .teamred{
+            padding: 0 5rem;
+        }
+
+}
+
+@media (min-width:1200px) {
+    .index-grid{
+    
+        grid-template-areas:        
+        "nav nav"
+        "contenido contenido"
+        "contenido2 contenido2"
+        "footer footer";           
+    }  
+
+    .img-index{
+        width: 35rem;
+        height: 30rem;
+    }    
+
+    .drivers-img{
+        width: 27rem;
+        height: 19rem;
+    }    
+    .pilotos-grid{
+        display: grid;                
+        grid-auto-flow: column dense; 
+        grid-template-columns: 1fr 1fr 0.6fr 1fr 1fr; 
+        grid-template-rows: 1fr;        
+        grid-template-areas: 
+        "header header header header header"
+        "nav nav nav nav nav"
+        "max max . checo checo"
+        "teamred teamred teamred teamred teamred"
+        "footer footer footer footer footer";          
+    }
+    .checo{    
+        background-color: $colordrivers;
+        border-radius: 2em;
+        padding: 1vh;
+        font-size: 70%;
+        
+    }
+    .max{
+        background-color: $colordrivers;
+        border-radius: 2em;
+        padding: 1vh;
+        font-size: 70%;
+    }
+    .footer1{
+        padding: 5vh 20vh;
+     }
+    
+    .footer2{
+        padding: 5vh 20vh; 
+    }
+}
+
+@media (min-width:1400px){
+    .max{
+        font-size: 100%;
+    }
+    .checo{
+        font-size: 100%;
+    }
+}
