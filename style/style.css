@@ -1,4 +1,5 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap"); /*+++++ GENERAL CONFIGS +++++*/
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+/*+++++ GENERAL CONFIGS +++++*/
 * {
   padding: 0;
   margin: 0;
@@ -82,6 +83,60 @@ a:active {
   margin: auto;
 }
 
+/*+++++ Grids Configs +++++*/
+.index-grid {
+  display: flex;
+  flex-direction: column;
+  grid-template-areas: "nav" "contenido" "contenido2" "footer";
+  gap: 40px;
+}
+
+nav {
+  grid-area: nav;
+}
+
+footer {
+  color: white;
+  grid-area: footer;
+  display: flex;
+  padding: 5vh 0vh;
+  justify-content: space-around;
+}
+
+.contenido1 {
+  grid-area: contenido;
+  text-align: center;
+}
+.contenido1 div {
+  padding: 20px;
+}
+
+.contenido2 {
+  grid-area: contenido2;
+  text-align: center;
+}
+
+.pilotos-grid {
+  display: grid;
+  flex-direction: column;
+  grid-template-areas: "nav" "max" "checo" "teamred" "footer";
+}
+
+.teamred {
+  grid-area: teamred;
+  padding: 1rem;
+}
+
+.max {
+  grid-area: max;
+  text-align: center;
+}
+
+.checo {
+  text-align: center;
+  grid-area: checo;
+}
+
 /*+++++ Index configs +++++*/
 .img-index {
   width: 17rem;
@@ -140,58 +195,19 @@ td, th {
   padding: 2rem;
 }
 
-/*+++++ Grids Configs +++++*/
-.index-grid {
-  display: flex;
-  flex-direction: column;
-  grid-template-areas: "nav" "contenido" "contenido2" "footer";
-  gap: 40px;
+/*+++++ Cars configs +++++*/
+.accordion-button {
+  color: rgb(255, 255, 255) !important;
+  background-color: rgb(0, 38, 73) !important;
 }
 
-nav {
-  grid-area: nav;
+.accordion-item {
+  color: rgb(255, 255, 255);
+  background-color: rgb(0, 38, 73);
 }
 
-footer {
-  color: white;
-  grid-area: footer;
-  display: flex;
-  padding: 5vh 0vh;
-  justify-content: space-around;
-}
-
-.contenido1 {
-  grid-area: contenido;
-  text-align: center;
-}
-.contenido1 div {
-  padding: 20px;
-}
-
-.contenido2 {
-  grid-area: contenido2;
-  text-align: center;
-}
-
-.pilotos-grid {
-  display: grid;
-  flex-direction: column;
-  grid-template-areas: "nav" "max" "checo" "teamred" "footer";
-}
-
-.teamred {
-  grid-area: teamred;
-  padding: 1rem;
-}
-
-.max {
-  grid-area: max;
-  text-align: center;
-}
-
-.checo {
-  text-align: center;
-  grid-area: checo;
+.cars-style {
+  padding: 2rem;
 }
 
 /*+++++ Media Queries +++++*/
@@ -274,18 +290,4 @@ footer {
   .checo {
     font-size: 100%;
   }
-}
-/*+++++ Cars configs +++++*/
-.accordion-button {
-  color: rgb(255, 255, 255) !important;
-  background-color: rgb(0, 38, 73) !important;
-}
-
-.accordion-item {
-  color: rgb(255, 255, 255);
-  background-color: rgb(0, 38, 73);
-}
-
-.cars-style {
-  padding: 2rem;
 }/*# sourceMappingURL=style.css.map */
