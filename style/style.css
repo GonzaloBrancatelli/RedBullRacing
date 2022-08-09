@@ -43,16 +43,6 @@ h2 {
   font-size: calc(0.7rem + 0.6vw);
 }
 
-.accordion-button {
-  color: white !important;
-  background-color: #002649 !important;
-}
-
-.accordion-item {
-  color: white;
-  background-color: #002649;
-}
-
 i {
   padding-right: 0.3rem;
 }
@@ -287,4 +277,13 @@ footer {
   .checo {
     font-size: 100%;
   }
+}
+.accordion-button {
+  color: white !important;
+  background-color: #002649 !important;
+}
+
+.accordion-item {
+  color: white;
+  background-color: #002649;
 }/*# sourceMappingURL=style.css.map */
