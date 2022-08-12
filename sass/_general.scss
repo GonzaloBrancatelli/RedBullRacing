@@ -31,6 +31,9 @@
     h3{ 
       padding: 1rem 0;         
       font-size: calc(0.7rem + .6vw);
+      a{
+        font-weight: bolder;
+      }
    }
  }
 
@@ -40,7 +43,10 @@
     h3{
       padding: 1rem 0;        
       font-size: calc(0.7rem + .6vw);
-   }
+      a{
+        font-weight: bolder;
+      }            
+   }   
 }
 
 i {
