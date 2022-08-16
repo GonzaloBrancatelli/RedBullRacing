@@ -1,5 +1,4 @@
 /*+++++ Media Queries +++++*/
-
 @media (min-width:580px) {
 
     td, th {    
@@ -27,16 +26,15 @@
     .mobile{
         display: contents;
     }
-
-    .desktop {display: inline-flex;}
+ 
+    .desktop {display: inline-flex;} 
 
  
 }
 
 @media (min-width:860px) {
         .img-index{
-            width: 30rem;
-            height: 25rem;
+          @include sizes(30rem, 25rem);            
         }    
 
         .teamred{
@@ -56,13 +54,12 @@
     }  
 
     .img-index{
-        width: 35rem;
-        height: 30rem;
+        @include sizes(35rem, 30rem);        
     }    
 
     .drivers-img{
-        width: 27rem;
-        height: 19rem;
+        @include sizes(27rem, 19rem);
+        
     }    
     .pilotos-grid{
         display: grid;                

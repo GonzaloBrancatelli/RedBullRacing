@@ -51,17 +51,15 @@ footer {
 
 .teamred{    
     grid-area: teamred;
-    padding: 1rem;
-      
+    padding: 1rem;      
 }
 
-.max {       
-    grid-area: max;    
-    text-align: center;    
+.maxGrid{
+    grid-area: max;
+    margin-left: 2vh;
 }
 
-.checo {    
-    text-align: center;
+.checoGrid{
     grid-area: checo;
-
+    margin-right: 2vh;
 }

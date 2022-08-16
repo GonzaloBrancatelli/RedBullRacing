@@ -1,10 +1,10 @@
 /*+++++ Index configs +++++*/
 
-.img-index{    
-    width: 17rem;
-    height: 15rem;     
+.img-index{
+    @include sizes(17rem, 15rem);       
 }
 
 .desktop{
     display: none;
 }
+ 

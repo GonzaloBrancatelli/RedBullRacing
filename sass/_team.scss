@@ -1,19 +1,19 @@
 /*+++++ Drivers +++++*/
 
 .drivers-img{
-    width: 12rem;
-    height: 10rem;
-}
-
-.checo img, .max img {
-    border: 0.5ch solid $borderdrivers ;
-    border-radius: 5px;
-}
-
-.max{
-    padding: 2rem;
+    @include sizes(12rem, 10rem);
+    
 }
 
 .checo{
-    padding: 2rem;
+    padding: 2rem;    
+    text-align: center;
+    img{
+        border: 0.5ch solid $borderdrivers ;
+        border-radius: 5px;}
+} 
+
+
+.max{
+    @extend .checo    
 }

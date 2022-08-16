@@ -2,7 +2,7 @@
 
 .data-table__table {
     margin: auto;
-    width: 98%;
+    @include sizes(98%, 0);    
     border: 1px solid $colortable;
     border-collapse: collapse;
     border-radius: 30px;      
@@ -23,5 +23,5 @@ td, th {
 
 .data-table__column-title{
     text-transform: uppercase;
-    background-color: $tabletittle;
+    background-color: $tabletittle; 
 }
