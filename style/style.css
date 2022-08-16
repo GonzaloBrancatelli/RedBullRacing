@@ -21,7 +21,7 @@ h1 {
   text-align: center;
 }
 
-h2 {
+h2, h4 {
   padding: 5vh;
   text-align: center;
 }
@@ -30,11 +30,20 @@ h2 {
   padding: 1rem 1rem;
   font-size: calc(0.7rem + 0.6vw);
 }
-.footer1 h3, .footer2 h3 {
+
+.footer1__headings {
   padding: 1rem 0;
   font-size: calc(0.7rem + 0.6vw);
 }
-.footer1 h3 a, .footer2 h3 a {
+.footer1__headings a {
+  font-weight: bolder;
+}
+
+.footer2__headings {
+  padding: 1rem 0;
+  font-size: calc(0.7rem + 0.6vw);
+}
+.footer2__headings a {
   font-weight: bolder;
 }
 

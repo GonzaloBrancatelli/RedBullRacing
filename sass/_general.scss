@@ -27,19 +27,26 @@
 
   .footer1{
     padding: 1rem 1rem;
-    font-size: calc(0.7rem + .6vw);
-    h3{ 
-      padding: 1rem 0;         
-      font-size: calc(0.7rem + .6vw);
-      a{
-        font-weight: bolder;
-      }
-   }
+    font-size: calc(0.7rem + .6vw);    
  }
 
 .footer2{
-    @extend .footer1; 
+  @extend .footer1
 }
+
+.footer1__headings { 
+  padding: 1rem 0; 
+  font-size: calc(0.7rem + .6vw);
+  a{
+    font-weight: bolder;}
+  }
+
+.footer2__headings { 
+  padding: 1rem 0;         
+  font-size: calc(0.7rem + .6vw);
+  a{
+    font-weight: bolder;}
+  }
 
 i {
     padding-right: 0.3rem;
