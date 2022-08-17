@@ -1,4 +1,4 @@
-/*+++++ Drivers +++++*/
+/*+++++ Drivers and Team +++++*/
 
 .drivers-img{
     @include sizes(12rem, 10rem);
@@ -16,4 +16,17 @@
 
 .max{
     @extend .checo    
+}
+
+$borders: (
+    christian: 0.5ch solid $bluecolor,
+    sebastian: 0.5ch dotted $cyancolor,
+    paul: 0.5ch double $redcolor,
+    adrian: 0.5ch dotted dashed solid double $aquacolor,
+);
+
+@each $team, $borderconfig in $borders {
+    .img__#{$team}{
+        border: $borderconfig; 
+    }
 }

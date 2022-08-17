@@ -16,14 +16,22 @@
     gap: 3vh;
   }
 
+// maps
+
+$map: (
+   c: center,
+   3: 3vh,
+   5: 5vh,  
+);
+
   h1 {
     margin-top: 3rem;
-    padding: 3vh;
-    text-align: center;}
+    padding: map-get($map, 3);
+    text-align: map-get($map, c);}
   
   h2, h4{
-      padding: 5vh;    
-      text-align: center;}
+      padding: map-get($map, 5);    
+      text-align: map-get($map, c);}
 
   .footer1{
     padding: 1rem 1rem;    
@@ -35,14 +43,14 @@
 
 .footer1__headings { 
   padding: 1rem 0; 
-  font-size: calc(0.7rem + .6vw);
+  font-size: calc(0.7rem + 0.6vw);
   a{
     font-weight: bolder;}
   }
 
 .footer2__headings { 
   padding: 1rem 0;         
-  font-size: calc(0.7rem + .6vw);
+  font-size: calc(0.7rem + 0.6vw);
   a{
     font-weight: bolder;}
   }
