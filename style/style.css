@@ -28,7 +28,6 @@ h2, h4 {
 
 .footer1, .footer2 {
   padding: 1rem 1rem;
-  font-size: calc(0.7rem + 0.6vw);
 }
 
 .footer1__headings {
@@ -93,6 +92,17 @@ a:active {
   grid-template-areas: "nav" "contenido" "contenido2" "footer";
   gap: 40px;
 }
+.index-grid .contenido1 {
+  grid-area: contenido;
+  text-align: center;
+}
+.index-grid .contenido1 div {
+  padding: 20px;
+}
+.index-grid .contenido2 {
+  grid-area: contenido2;
+  text-align: center;
+}
 
 nav {
   grid-area: nav;
@@ -104,19 +114,6 @@ footer {
   display: flex;
   padding: 5vh 0vh;
   justify-content: space-around;
-}
-
-.contenido1 {
-  grid-area: contenido;
-  text-align: center;
-}
-.contenido1 div {
-  padding: 20px;
-}
-
-.contenido2 {
-  grid-area: contenido2;
-  text-align: center;
 }
 
 .pilotos-grid {
@@ -159,23 +156,19 @@ footer {
   border-collapse: collapse;
   border-radius: 30px;
 }
-
-tr:nth-child(even) {
+.data-table__table tr:nth-child(even) {
   background-color: rgba(255, 255, 255, 0.2);
 }
-
-td, th {
+.data-table__table td, .data-table__table th {
   padding: 0.25rem;
   text-align: left;
   border-collapse: collapse;
 }
-
-.result_table-row-highlighted {
+.data-table__table .result_table-row-highlighted {
   font-weight: 600;
   color: rgb(255, 215, 0);
 }
-
-.data-table__column-title {
+.data-table__table .data-table__column-title {
   text-transform: uppercase;
   background-color: rgba(255, 255, 255, 0.4);
 }
@@ -218,16 +211,16 @@ td, th {
   .footer1, .footer2 {
     padding: 3vh 3vh;
   }
-  .footer1 h3, .footer2 h3 {
-    padding: 1.5rem 0;
-    font-size: calc(1.3rem + 0.6vw);
-  }
-  .footer2 h3 {
+  .footer1__headings {
     padding: 1.5rem 0;
     font-size: calc(1.3rem + 0.6vw);
   }
   .footer2 {
     padding: 3vh 3vh;
+  }
+  .footer2__headings {
+    padding: 1.5rem 0;
+    font-size: calc(1.3rem + 0.6vw);
   }
   .mobile {
     display: contents;

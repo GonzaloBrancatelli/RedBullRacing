@@ -9,7 +9,19 @@
     "contenido"
     "contenido2"
     "footer";
-    gap: 40px;   
+    gap: 40px;
+    .contenido1{
+        grid-area: contenido;
+        text-align: center;
+        div {
+            padding: 20px;
+        }
+    }
+    
+    .contenido2 {
+        grid-area: contenido2;
+        text-align: center;    
+    }   
 }
 
 nav{         
@@ -23,20 +35,6 @@ footer {
     padding: 5vh 0vh;
     justify-content: space-around;
  }
-
-.contenido1{
-    grid-area: contenido;
-    text-align: center;
-    div {
-        padding: 20px;
-    }
-}
-
-
-.contenido2 {
-    grid-area: contenido2;
-    text-align: center;    
-}
 
 .pilotos-grid{    
     display: grid;

@@ -7,20 +7,18 @@
    
     .footer1{
         padding: 3vh 3vh;        
-     }
-
-     .footer1 h3{
-        padding: 1.5rem 0;         
-        font-size: calc(1.3rem + .6vw)
-     }
-
-     .footer2 h3{
-        padding: 1.5rem 0;        
-        font-size: calc(1.3rem + .6vw)
-     }
+        &__headings{
+            padding: 1.5rem 0;        
+            font-size: calc(1.3rem + .6vw)
+         }        
+     }        
     
     .footer2{
-        padding: 3vh 3vh;        
+        padding: 3vh 3vh;
+        &__headings{
+            padding: 1.5rem 0;        
+            font-size: calc(1.3rem + .6vw)
+         }        
     }
 
     .mobile{
