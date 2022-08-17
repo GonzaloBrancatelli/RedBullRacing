@@ -201,7 +201,7 @@ footer {
 }
 
 .img__adrian {
-  border: 0.5ch dotted dashed solid double rgb(0, 158, 132);
+  border: 0.5ch dashed rgb(0, 158, 132);
 }
 
 /*+++++ Cars configs +++++*/

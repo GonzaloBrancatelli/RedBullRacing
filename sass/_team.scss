@@ -22,7 +22,7 @@ $borders: (
     christian: 0.5ch solid $bluecolor,
     sebastian: 0.5ch dotted $cyancolor,
     paul: 0.5ch double $redcolor,
-    adrian: 0.5ch dotted dashed solid double $aquacolor,
+    adrian: 0.5ch dashed $aquacolor,
 );
 
 @each $team, $borderconfig in $borders {
