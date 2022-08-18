@@ -27,6 +27,6 @@ $borders: (
 
 @each $team, $borderconfig in $borders {
     .img__#{$team}{
-        border: $borderconfig; 
+        border: $borderconfig;
     }
 }

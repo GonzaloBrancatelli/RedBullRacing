@@ -32,7 +32,7 @@
 
 @media (min-width:860px) {
         .img-index{
-          @include sizes(30rem, 25rem);            
+          @include sizes(30rem, 20rem);            
         }    
 
         .teamred{
@@ -52,7 +52,7 @@
     }  
 
     .img-index{
-        @include sizes(35rem, 30rem);        
+        @include sizes(32rem, 24rem);        
     }    
 
     .drivers-img{

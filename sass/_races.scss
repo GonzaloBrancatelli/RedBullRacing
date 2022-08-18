@@ -10,11 +10,6 @@
         background-color: $tablebackground ;
     }
 
-    td, th {    
-    padding: 0.25rem;
-    text-align: left;  
-    border-collapse: collapse;  
-    }
     .result_table-row-highlighted{
         font-weight: 600;
         color: $tablewin;
@@ -26,6 +21,10 @@
     }      
 }
 
+td, th {   
+    text-align: left;  
+    border-collapse: collapse;  
+    }
 
 
 

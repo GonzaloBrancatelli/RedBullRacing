@@ -139,7 +139,7 @@ footer {
 
 /*+++++ Index configs +++++*/
 .img-index {
-  height: 15rem;
+  height: 13rem;
   width: 17rem;
 }
 
@@ -159,11 +159,6 @@ footer {
 .data-table__table tr:nth-child(even) {
   background-color: rgba(255, 255, 255, 0.2);
 }
-.data-table__table td, .data-table__table th {
-  padding: 0.25rem;
-  text-align: left;
-  border-collapse: collapse;
-}
 .data-table__table .result_table-row-highlighted {
   font-weight: 600;
   color: rgb(255, 215, 0);
@@ -171,6 +166,11 @@ footer {
 .data-table__table .data-table__column-title {
   text-transform: uppercase;
   background-color: rgba(255, 255, 255, 0.4);
+}
+
+td, th {
+  text-align: left;
+  border-collapse: collapse;
 }
 
 /*+++++ Drivers and Team +++++*/
@@ -247,7 +247,7 @@ footer {
 }
 @media (min-width: 860px) {
   .img-index {
-    height: 25rem;
+    height: 20rem;
     width: 30rem;
   }
   .teamred {
@@ -259,8 +259,8 @@ footer {
     grid-template-areas: "nav nav" "contenido contenido" "contenido2 contenido2" "footer footer";
   }
   .img-index {
-    height: 30rem;
-    width: 35rem;
+    height: 24rem;
+    width: 32rem;
   }
   .drivers-img {
     height: 19rem;
