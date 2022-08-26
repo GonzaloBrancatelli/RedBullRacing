@@ -41,14 +41,16 @@ $map: (
   @extend .footer1
 }
 
-.footer1__headings { 
+.footer1__headings {
+  display: block; 
   padding: 1rem 0; 
   font-size: calc(0.7rem + 0.6vw);
   a{
     font-weight: bolder;}
   }
 
-.footer2__headings { 
+.footer2__headings {
+  display: block;  
   padding: 1rem 0;         
   font-size: calc(0.7rem + 0.6vw);
   a{
@@ -59,14 +61,21 @@ i {
     padding-right: 0.3rem;
 }
 
-span{
+.parrafoConfig{
+  text-indent: 2em;
+  padding: 2em;
+}
+
+#more {display: none;}
+
+.span_index{
     color: $spancolor;
 }
 
 /*+++++ NAV +++++*/
 .color-nav {
     background-color: $colornav;
-}
+} 
 
 #offcanvasDarkNavbar {
     background-color: $colornav!Important;

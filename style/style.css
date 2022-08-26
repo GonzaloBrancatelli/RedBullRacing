@@ -31,6 +31,7 @@ h2, h4 {
 }
 
 .footer1__headings {
+  display: block;
   padding: 1rem 0;
   font-size: calc(0.7rem + 0.6vw);
 }
@@ -39,6 +40,7 @@ h2, h4 {
 }
 
 .footer2__headings {
+  display: block;
   padding: 1rem 0;
   font-size: calc(0.7rem + 0.6vw);
 }
@@ -50,7 +52,16 @@ i {
   padding-right: 0.3rem;
 }
 
-span {
+.parrafoConfig {
+  text-indent: 2em;
+  padding: 2em;
+}
+
+#more {
+  display: none;
+}
+
+.span_index {
   color: rgb(179, 179, 179);
 }
 
@@ -97,7 +108,7 @@ a:active {
   text-align: center;
 }
 .index-grid .contenido1 div {
-  padding: 20px;
+  padding: 0.5rem;
 }
 .index-grid .contenido2 {
   grid-area: contenido2;
@@ -138,11 +149,6 @@ footer {
 }
 
 /*+++++ Index configs +++++*/
-.img-index {
-  height: 13rem;
-  width: 17rem;
-}
-
 .desktop {
   display: none;
 }
@@ -174,18 +180,18 @@ td, th {
 }
 
 /*+++++ Drivers and Team +++++*/
-.drivers-img {
-  height: 10rem;
-  width: 12rem;
-}
-
 .checo, .max {
   padding: 2rem;
   text-align: center;
+  text-indent: 2em;
 }
 .checo img, .max img {
   border: 0.5ch solid rgb(0, 84, 158);
   border-radius: 5px;
+}
+
+.max {
+  text-indent: 2em;
 }
 
 .img__christian {
@@ -246,10 +252,6 @@ td, th {
   }
 }
 @media (min-width: 860px) {
-  .img-index {
-    height: 20rem;
-    width: 30rem;
-  }
   .teamred {
     padding: 0 5rem;
   }
@@ -257,14 +259,6 @@ td, th {
 @media (min-width: 1200px) {
   .index-grid {
     grid-template-areas: "nav nav" "contenido contenido" "contenido2 contenido2" "footer footer";
-  }
-  .img-index {
-    height: 24rem;
-    width: 32rem;
-  }
-  .drivers-img {
-    height: 19rem;
-    width: 27rem;
   }
   .pilotos-grid {
     display: grid;

@@ -31,10 +31,7 @@
 }
 
 @media (min-width:860px) {
-        .img-index{
-          @include sizes(30rem, 20rem);            
-        }    
-
+        
         .teamred{
             padding: 0 5rem;
         }
@@ -51,14 +48,6 @@
         "footer footer";           
     }  
 
-    .img-index{
-        @include sizes(32rem, 24rem);        
-    }    
-
-    .drivers-img{
-        @include sizes(27rem, 19rem);
-        
-    }    
     .pilotos-grid{
         display: grid;                
         grid-auto-flow: column dense; 

@@ -1,13 +1,9 @@
 /*+++++ Drivers and Team +++++*/
 
-.drivers-img{
-    @include sizes(12rem, 10rem);
-    
-}
-
 .checo{
     padding: 2rem;    
     text-align: center;
+    text-indent: 2em;
     img{
         border: 0.5ch solid $borderdrivers ;
         border-radius: 5px;}
@@ -15,7 +11,8 @@
 
 
 .max{
-    @extend .checo    
+    @extend .checo;
+    text-indent: 2em;    
 }
 
 $borders: (
